@@ -17,7 +17,7 @@ def browser(request):
 
     #Checking if the chosen language is supported
     if locale not in supported_locales:
-        raise pytest.UsageError("--language should be one of the supported options: ar, ca, cs, da, de, en-gb, el, es, fi, fr, it, ko, nl, pl, pt, pt-br, ro, ru, sk, uk, zh-hans")
+        raise pytest.UsageError("Supported --language options: ar, ca, cs, da, de, en-gb, el, es, fi, fr, it, ko, nl, pl, pt, pt-br, ro, ru, sk, uk, zh-hans")
     
     browser = None
     if browser_name == "chrome":
